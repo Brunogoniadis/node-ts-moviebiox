@@ -1,0 +1,42 @@
+# Arquivos de configuração
+.env
+
+# Dependências
+/node_modules
+
+# Arquivos de compilação
+*.log
+*.pem
+*.pid
+*.lock
+*.sock
+*.swp
+*.tgz
+*.zip
+*.rar
+
+# Arquivos de cache
+.npm
+.yarn
+*.cache
+
+# Arquivos de build
+/build
+/dist
+
+# Arquivos de IDE e editores de texto
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de teste
+/coverage
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outros
+*.bak
+*.tmp
