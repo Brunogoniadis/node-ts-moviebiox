@@ -1,10 +1,10 @@
-# Arquivos de configuração
+# config files
 .env
 
-# Dependências
+# Dependencies
 /node_modules
 
-# Arquivos de compilação
+# comp files
 *.log
 *.pem
 *.pid
@@ -15,28 +15,28 @@
 *.zip
 *.rar
 
-# Arquivos de cache
+# cache
 .npm
 .yarn
 *.cache
 
-# Arquivos de build
+# build files
 /build
 /dist
 
-# Arquivos de IDE e editores de texto
+# ide files
 .vscode
 .idea
 *.sublime-project
 *.sublime-workspace
 
-# Arquivos de teste
+# test files
 /coverage
 
-# Arquivos de sistema operacional
+# os files
 .DS_Store
 Thumbs.db
 
-# Outros
+# others
 *.bak
 *.tmp
