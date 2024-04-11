@@ -16,12 +16,14 @@ router.get('/categories', async (req: Request, res: Response) => {
       throw new Error('API key not found')
     }
 
-      const response: AxiosResponse<{ genres: Genre[] }> = await
-          axios.get('https://api.themoviedb.org/3/genre/movie/list', {
-      params: {
-        api_key: apiKey,
-      },
-    })
+    const response: AxiosResponse<{ genres: Genre[] }> = await axios.get(
+      'https://api.themoviedb.org/3/genre/movie/list',
+      {
+        params: {
+          api_key: apiKey,
+        },
+      }
+    )
 
     const categories: string[] = response.data.genres.map(
       (genre: Genre) => genre.name
