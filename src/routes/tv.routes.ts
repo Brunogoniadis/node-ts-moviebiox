@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const router = Router()
 
-router.get('/tv/:name', async (req: Request, res: Response) => {
+router.get('/tv/:id', async (req: Request, res: Response) => {
   try {
     const apiKey = process.env.API_KEY
 
@@ -13,10 +13,11 @@ router.get('/tv/:name', async (req: Request, res: Response) => {
 
     console.log(req)
 
-    const { name } = req.params
+    const { id } = req.params
 
     const response = await axios.get(
-      `https://api.themoviedb.org/3/search/tv?query=${name}`,
+      `https://api.themoviedb.org/3/tv/${id}`,
+
       {
         params: {
           api_key: apiKey,
