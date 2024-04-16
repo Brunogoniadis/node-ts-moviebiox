@@ -18,7 +18,14 @@ import tvShowsSearch from "./routes/tvShowsSearch.routes";
 
 const app = express();
 const port = 3000;
-app.use(cors());
+
+const corsConfig = {
+  origin: "*",
+  credential: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+};
+
+app.use(cors(corsConfig));
 
 app.use("/api", movieById);
 app.use("/api", moviesCategories);
