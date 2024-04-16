@@ -4,7 +4,7 @@ import { IGenre } from "../types/types";
 
 const router = Router();
 
-router.get("/moviesgenres", async (req: Request, res: Response) => {
+router.get("/tvgenres/", async (req: Request, res: Response) => {
   try {
     const apiKey = process.env.API_KEY;
 
@@ -13,7 +13,7 @@ router.get("/moviesgenres", async (req: Request, res: Response) => {
     }
 
     const response: AxiosResponse<{ genres: IGenre[] }> = await axios.get(
-      `https://api.themoviedb.org/3/genre/movie/list`,
+      `https://api.themoviedb.org/3/genre/tv/list`,
       {
         params: {
           api_key: apiKey,
