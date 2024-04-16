@@ -13,8 +13,7 @@ router.get("/moviesgenres", async (req: Request, res: Response) => {
     }
 
     const response: AxiosResponse<{ genres: IGenre[] }> = await axios.get(
-      `https://node-ts-moviebiox.vercel.app/api/moviesgenres`,
-
+      `https://api.themoviedb.org/3/genre/movie/list`,
       {
         params: {
           api_key: apiKey,

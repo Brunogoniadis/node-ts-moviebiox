@@ -14,7 +14,7 @@ router.get("/movies/related/:movieId", async (req: Request, res: Response) => {
 
     const { movieId } = req.params;
 
-    const apiUrl = `https://node-ts-moviebiox.vercel.app/api/movies/related/${movieId}`;
+    const apiUrl = `https://api.themoviedb.org/3/movie/${movieId}/recommendations`;
 
     const response = await axios.get(apiUrl, {
       params: {
