@@ -1,8 +1,8 @@
 ![Logo](https://raw.githubusercontent.com/Brunogoniadis/Movie-biox-React-ts/ffa100b9ca4d5ee321909cc1e8f57ccec77ab7c7/src/assets/Logo.svg)
 
-## Moviebiox
+## MovieDbiox
 
-NodeTsMoviebiox é uma aplicação backend que alimenta um front que permite aos usuários pesquisarem e navegarem por filmes e programas de TV utilizando a API do Themoviedb. Neste repositório frontend, que faz parte de uma aplicação full-stack, os usuários podem pesquisar por título, gênero ou palavra-chave. Os resultados da pesquisa são exibidos em uma grade com pôsteres, títulos e avaliações.
+NodeTsMovieSbiox é uma aplicação backend que alimenta um front que permite aos usuários pesquisarem e navegarem por filmes e programas de TV utilizando a API do Themoviedb. Neste repositório frontend, que faz parte de uma aplicação full-stack, os usuários podem pesquisar por título, gênero ou palavra-chave. Os resultados da pesquisa são exibidos em uma grade com pôsteres, títulos e avaliações.
  
 O frontend está implantado em 
 - [Movie-biox](https://movie-biox.vercel.app/)
