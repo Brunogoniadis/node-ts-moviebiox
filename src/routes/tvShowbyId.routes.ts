@@ -16,7 +16,7 @@ router.get("/tv/:id", async (req: Request, res: Response) => {
     const { id } = req.params;
 
     const response: AxiosResponse<TVShowData> = await axios.get(
-      `https://api.themoviedb.org/3/movie/${id}`,
+      `https://api.themoviedb.org/3/tv/${id}`,
       {
         params: {
           api_key: apiKey,
