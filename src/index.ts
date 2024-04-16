@@ -14,6 +14,7 @@ import tvShowById from "./routes/tvShowbyId.routes";
 
 import tvShowOfCategory from "./routes/tvShowOfCategory.routes";
 import tvShowRelacioned from "./routes/tvShowRelacioned.routes";
+import tvShowsSearch from "./routes/tvShowsSearch.routes";
 
 const app = express();
 const port = 3000;
@@ -27,6 +28,7 @@ app.use("/api", moviesSearch);
 app.use("/api", tvShowById);
 app.use("/api", tvShowOfCategory);
 app.use("/api", tvShowRelacioned);
+app.use("/api", tvShowsSearch);
 
 app.listen(port, () => {
   console.log(`Server is up!!!`);
