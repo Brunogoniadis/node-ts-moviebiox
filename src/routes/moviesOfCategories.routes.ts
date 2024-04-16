@@ -14,7 +14,8 @@ router.get(
         throw new Error("API key not found");
       }
 
-      const { genreId } = req.params;
+      const { categoryId } = req.params;
+      console.log("genreId", req.params);
       const { page } = req.query;
 
       const apiUrl = `https://api.themoviedb.org/3/discover/movie`;
@@ -22,7 +23,7 @@ router.get(
       const response = await axios.get(apiUrl, {
         params: {
           api_key: apiKey,
-          with_genres: genreId,
+          with_genres: categoryId,
           page: page || 1,
         },
       });
