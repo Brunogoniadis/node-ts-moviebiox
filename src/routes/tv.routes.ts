@@ -11,7 +11,6 @@ router.get('/tv/:id', async (req: Request, res: Response) => {
       throw new Error('API key not found')
     }
 
-    console.log(req)
 
     const { id } = req.params
 
