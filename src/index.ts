@@ -13,6 +13,8 @@ import moviesOfCategories from "./routes/moviesOfCategories.routes";
 
 import moviesRelacioned from "./routes/moviesRelacioned.routes";
 
+import moviesSearch from "./routes/moviesSearch.routes";
+
 const app = express();
 const port = 3000;
 
@@ -25,6 +27,8 @@ app.use("/api", moviesCategories);
 app.use("/api", moviesOfCategories);
 
 app.use("/api", moviesRelacioned);
+
+app.use("/api", moviesSearch);
 
 app.listen(port, () => {
   console.log(`Server is up!!!`);
