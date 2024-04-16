@@ -1,8 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
 
-dotenv.config();
+import cors from "cors";
 
+dotenv.config();
 
 import movieById from "./routes/movieById.routes";
 import moviesCategories from "./routes/moviesCategories.routes";
@@ -17,13 +18,13 @@ import tvShowsSearch from "./routes/tvShowsSearch.routes";
 
 const app = express();
 const port = 3000;
+app.use(cors());
 
 app.use("/api", movieById);
 app.use("/api", moviesCategories);
 app.use("/api", moviesOfCategories);
 app.use("/api", moviesRelacioned);
 app.use("/api", moviesSearch);
-
 
 app.use("/api", tvShowById);
 app.use("/api", tvShowsCategories);
