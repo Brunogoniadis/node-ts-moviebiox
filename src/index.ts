@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-import tvRouter from "./routes/tv.routes";
 
 import movieById from "./routes/movieById.routes";
 import moviesCategories from "./routes/moviesCategories.routes";
