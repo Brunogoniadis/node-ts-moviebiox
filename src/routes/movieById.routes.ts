@@ -14,7 +14,6 @@ router.get("/movie/:id", async (req: Request, res: Response) => {
 
     
     const { id } = req.params;
-    console.log("teste", id);
 
     const response: AxiosResponse<IMovie> = await axios.get(
       `https://api.themoviedb.org/3/movie/${id}`,
