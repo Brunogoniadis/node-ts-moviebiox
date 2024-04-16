@@ -4,7 +4,7 @@ import { ITvShow } from "../types/types";
 
 const router = Router();
 
-router.get("/tv/shows/:genreId", async (req: Request, res: Response) => {
+router.get("/tv/category/:genreId", async (req: Request, res: Response) => {
   try {
     const apiKey = process.env.API_KEY;
 

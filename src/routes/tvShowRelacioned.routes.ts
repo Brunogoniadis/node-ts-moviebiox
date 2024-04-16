@@ -5,7 +5,7 @@ import { ITvShow } from "../types/types";
 const router = Router();
 
 router.get(
-  "/tv/shows/related/:tvShowId",
+  "/tv/related/:tvShowId",
   async (req: Request, res: Response) => {
     try {
       const apiKey = process.env.API_KEY;
