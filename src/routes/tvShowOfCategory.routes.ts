@@ -15,7 +15,7 @@ router.get("/tv/category/:genreId", async (req: Request, res: Response) => {
     const { genreId } = req.params;
     const { page } = req.query;
 
-    const apiUrl = `https://api.themoviedb.org/3/discover/tv`;
+    const apiUrl = `https://node-ts-moviebiox.vercel.app/api/tv/category`;
 
     const response = await axios.get(apiUrl, {
       params: {
